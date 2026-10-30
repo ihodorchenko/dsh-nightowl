@@ -106,9 +106,6 @@ pnpm run build   # rebuilds lib/client.js and lib/client.js.map
 pnpm test        # node --test "tests/**/*.mjs" — 25 host tests + 5 client-bundle tests
 ```
 
-.github/workflows/test.yml` in a checkout with the `workflow` token scope reinstalls, rebuilds the
-client bundle, verifies it is byte-identical to the committed artifact, and runs the tests on Node 24.
-
 `index.js` is authored JavaScript and ships as-is; `lib/client.js` is the only built artifact. The bundle
 is the DSH closure-factory format (`window.__ModuleLoader__.load({ id, factory })`), with React and
 `@deepseek-ai/dsh-client-ui-primitives` resolved from the page's shared platform modules.
