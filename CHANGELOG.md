@@ -18,7 +18,7 @@ First public release.
 - `enabled` and `mutedSessions` volatile configuration fields; Settings writes apply live through the
   Loader's volatile configuration path.
 - en/ru dictionaries and plugin-manager locale metadata; MIT license.
-- 25 host unit tests and 5 client-bundle tests (`pnpm test`), GitHub Actions CI, reproducible client build
+- 25 host unit tests and 5 client-bundle tests (`pnpm test`), reproducible client build
   (`pnpm run build`).
 
 ### Requirements
