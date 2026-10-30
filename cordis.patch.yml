@@ -1,0 +1,15 @@
+# Night Owl bundle patch.
+#
+# This is the `dsh.bundle.patch` layer of the package: installing the bundle
+# into a profile appends the package to `dsh.profile.bundles`, and profile boot
+# merges this file as one layer. The single row below is both the Host half
+# (index.js: tracks running sessions and runs `caffeinate`) and the browser half
+# (the package's `dsh.client` declaration serves lib/client.js to the Web GUI,
+# which adds the per-session switch and the Settings row).
+#
+# `id` is the plugin's settings namespace: the browser half reads and writes the
+# profile patch override for this exact entry id, so keep it in sync with
+# ENTRY_ID in src/client/index.tsx.
+- insert:
+    - id: nightowl
+      name: dsh-nightowl

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Night Owl",
+    "description": "Keeps the Mac awake while DeepSeek Harness works. The display may turn off and closing the lid sleeps normally; switch it per session in the header or globally in Settings."
+  }
+}
